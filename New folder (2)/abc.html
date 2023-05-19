@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Background repeat demo</title>
+	<link rel="stylesheet" href="styles.css">
+	<style>
+		body {
+			background-image: url('background-image.jpg');
+			background-repeat: repeat;
+		}
+
+		.container {
+			background-image: url('background-image2.jpg');
+			background-repeat: no-repeat;
+			background-size: cover;
+			height: 500px;
+			width: 500px;
+			padding: 20px;
+			box-sizing: border-box;
+		}
+	</style>
+</head>
+<body>
+	<!-- This element will have a repeated background image -->
+	<div>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nec arcu ac augue sagittis porttitor. Fusce luctus velit felis, vel vestibulum metus convallis vel. </p>
+	</div>
+
+	<!-- This element will have a non-repeating background image that covers the entire element -->
+	<div class="container">
+		<p>Nulla rhoncus rutrum ante ac tincidunt. Pellentesque eu bibendum nisi, quis tristique turpis. Maecenas posuere est ac mi pharetra, sit amet dictum felis convallis. </p>
+	</div>
+</body>
+</html>
