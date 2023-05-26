@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <nav>
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Contact</a></li>
+          <li class="right2" ><a  href="#">Log In</a></li>
+          <li><a class="right" href="#">Sign Up</a></li> 
+        </ul>
+      </nav>
+      
+</head>
+<style>
+    .navbar {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 15px;
+  background-color: black;
+}
+
+.navbar li {
+  margin-right: 10px;
+}
+
+.navbar li:last-child {
+  margin-right: 0;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #faf4f4f6;
+  padding: 10px;
+ 
+}
+
+
+    div {
+        display: flex;
+        padding: 20px;
+        margin-top: 20px;
+        border: 1px solid black;
+        margin-top: 70px;
+        width: fit-content;
+        margin-bottom: 50px;
+
+    }
+
+    div img {
+        width: 100px;
+        padding-right: 30px;
+
+    }
+
+    div img:last-child {
+        padding-right: 0;
+    }
+
+    .next {
+        position: relative;
+        top:50px;
+        display: flex;
+        padding: 20px;
+        margin-top: 30px;
+        border: 1px solid rgb(241, 8, 8);
+        margin: 0;
+        width: fit-content;
+        margin-bottom: 100px;
+
+    }
+
+    .next img {
+        width: 100px;
+        padding-right: 30px;
+
+    }
+
+    .next img:last-child {
+        padding-right: 0;
+    }
+
+    @media (max-width: 600px) {
+        div {
+            flex-wrap: wrap;
+           
+        }
+
+        div img {
+            width: 10px;
+            flex: 1 2 100%;
+            padding-bottom: 30px;
+
+        }
+
+        div img:last-child {
+            padding-bottom: 0;
+        }
+
+
+
+
+
+
+    }
+    @media (max-width: 600px) {
+        .next {
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .next img {
+            width: 10px;
+            flex: 1 2 100%;
+            padding-bottom: 30px;
+
+        }
+
+        .next img:last-child {
+            padding-bottom: 0;
+        }
+       
+
+
+
+
+
+    }
+
+.right{
+    position: absolute;
+    right:40px;
+   top:15px;
+   
+}
+.right2{
+    position: absolute;
+    right:100px;
+   top:25px;
+   
+}
+</style>
+
+<body>
+    <div>
+        <img src="../laptops/asus br110.jpg" alt="">
+        <img src="../laptops/asus br110.jpg" alt="">
+        <img src="../laptops/asus br110.jpg" alt="">
+        <img src="../laptops/asus br110.jpg" alt="">
+        <img src="../laptops/dell vostro.jpg" alt="">
+    </div>
+    <hr>
+    <div class="next">
+        <img src="../laptops/asus br110.jpg" alt="">
+        <img src="../laptops/asus br110.jpg" alt="">
+        <img src="../laptops/asus br110.jpg" alt="">
+        <img src="../laptops/asus br110.jpg" alt="">
+        <img src="../laptops/dell vostro.jpg" alt="">
+    </div>
+    <hr>
+</body>
+
+</html>

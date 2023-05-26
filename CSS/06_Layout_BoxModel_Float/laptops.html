@@ -7,86 +7,182 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
     <style>
-        section {
+        
+        body{
+            margin:0;
+            padding:0;
+        
+        }
+        section,div{
             /* border: 1px solid blue; */
-            
-            padding: 5px;
-            margin: 5px;
-            width: 100%;
+           
+            display:flex;
+            padding: 10px;
+            margin: 10px;
+            /* flex-direction:column; */
+           
         }
 
         section div {
             float: left;
         }
 
-        section {
+        /* section {
             box-sizing: content-box;
             
 
-        }
+        } */
 
         section div {
             /* border: 1px solid blue; */
-            margin: 5px;
+            /* margin: 5px;
             padding: 20px;
             width: 23%;
             box-sizing: border-box;
             margin: 10px;
-           
+            */
+            flex:1;
+            height:220px;
+            flex-wrap:wrap-reverse;
+            flex-direction: row;
 
         }
 
         img {
-            width: 270px;
+            width: 160px;
         }
 
       
-        hr{
+        /* hr{
 
             width:100%;
     
-        }
+        } */
+        .navbar {
+  background-color: #f1f1f1;
+}
+
+.navbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin-left: 0px;
+  display:flex;
+}
+
+.navbar li {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar li:hover {
+  background-color: #ddd;
+}
+
+.navbar li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+/* @media screen and (max-width: 1000px) {
+  section div {
+    float:left;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 840px) {
+    section{
+        width:100%;
+    } 
+    section div>img{
+
+       width:400px; 
+    } */
+  /* section div {
+    float:left;  
+    width: 60%;
+  } 
+} */
+/* @media screen and (max-width: 950px) {
+    section{
+        width:100%;
+    } 
+    section div>img{
+
+       width:400px; 
+    }
+  section div {
+    float:left;  
+    width: 60%;
+  } 
+} */
+/* @media screen and (max-width: 600px) {
+    section{
+        width:60%;
+    }
+    section div>img{
+
+       width:230px; 
+    }
+  section div {
+    float:none;
+    width: 100%;
+  }
+} */
+
+
     </style>
+     <!-- <div class="navbar">
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+          <li>Item 4</li>
+          <li>Item 5</li>
+          <li>Item 1</li>
+          <li>Item 2</li>
+         
+        </ul>
+      </div> -->
 </head>
 
 <body>
 
+
     <section>
         <div>
             <img src="../laptops/asus br110.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>ASUS BR1100 Notebook 12</legend>
                 <li> Intel Celeron N4500</li>
                 <li>Integrated Graphics</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
         </div>
         <div>
             <img src="../laptops/asus.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>ASUS VivoBook</legend>
                 <li>Intel Celeron N4020</li>
                 <li>Integrated Graphics</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
         </div>
         <div>
             <img src="../laptops/dell vostro.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Dell Vostro </legend>
                 <li>Intel i3-1115G4</li>
                 <li>NVIDIA Graphics</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
         </div>
         <div>
             <img src="../laptops/hp 15s amd.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>HP 15s</legend>
                 <li>AMD Ryzen 3-5300U</li>
                 <li>Radeon Graphics</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
         </div>
 
     </section>
@@ -94,39 +190,39 @@
     <section >
         <div>
             <img src="../laptops/hp chromebook.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>HP Chromebook 11a</legend>
                 <li>MediaTek MT8183 Processor</li>
                 <li>N/A</li>
                 <li>Chrome OS</li>
-            </fieldset>
+            </fieldset> -->
         </div>
         <div>
             <img src="../laptops/hp pavilion.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>HP Pavilion 14 </legend>
                 <li>Intel Core i5</li>
                 <li>Intel Iris Xe Graphics</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
         </div>
         <div>
             <img src="../laptops/hp15.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Deatails of Dog</legend>
                 <li>German Shepard</li>
                 <li>Black Color</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
         </div>
         <div>
             <img src="../laptops/lenovo.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Deatails of Dog</legend>
                 <li>German Shepard</li>
                 <li>Black Color</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
         </div>
     </section>
 
@@ -134,40 +230,40 @@
     <section >
         <div>
             <img src="../laptops/redmi book.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Deatails of Dog</legend>
                 <li>German Shepard</li>
                 <li>Black Color</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
 
         </div>
         <div>
             <img src="../laptops/samsung.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Samsung Galaxy Book2</legend>
                 <li>Intel 12th Gen core i5</li>
                 <li> Intel Iris Xe Graphics</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
         </div>
         <div>
             <img src="../laptops/x360.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>HP Pavilion x360</legend>
                 <li>Intel Core i3</li>
                 <li>Intel UHD Graphics</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
         </div>
         <div>
             <img src="../laptops/xiaomi.jpg" alt="">
-            <fieldset>
+            <!-- <fieldset>
                 <legend>Xioami NotebookUltra</legend>
                 <li> Intel Core I5</li>
                 <li>Iris Xe Graphics</li>
                 <li>Windows 11 Home</li>
-            </fieldset>
+            </fieldset> -->
         </div>
     </section>
 
